@@ -1,0 +1,151 @@
+:root {
+    --desaturetedred: hsl(0, 36%, 70%);
+    --softred: hsl(0, 93%, 68%);
+    --darkred: hsl(0, 6%, 24%);
+}
+
+/*
+Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+main {
+    padding: 50px 0 50px 190px;
+    color: #333;
+}
+
+.image img {
+    height: 100%;
+}
+
+.logo {
+    margin-bottom: 70px;
+}
+
+h1 {
+    color:hsl(0, 36%, 70%);
+    font-weight: 300;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    margin-bottom: .6rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    line-height: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    color:hsl(0, 36%, 70%);
+    line-height: 2rem;
+    margin-bottom: 2rem;
+    width: 350px;
+}
+
+.email-area {
+    width: 100%;
+    position: relative;
+}
+
+#email {
+    border-radius: 30px;
+    padding: 15px 25px;
+    width: 100%;
+    border: 1px solid hsl(0, 36%, 70%);
+    outline: none;
+}
+
+#email::placeholder {
+    color: hsl(0, 36%, 70%)
+}
+
+#btn-email {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    padding: 10px 35px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px hsla(0, 93%, 68%, 0.671);
+    background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    border: none;
+    cursor: pointer;
+}
+
+.error {
+    margin-left: 25px;
+    margin-top: 5px;
+    color:hsl(0, 93%, 68%);
+}
+
+.errorimg {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    z-index: 2;
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1027px) {
+    body {
+        flex-direction: column-reverse;
+        height: auto;
+        padding-top: 100px;
+    }
+
+    main {
+        padding: 50px;
+        text-align: center;
+    }
+
+    p {
+        width: auto;
+    }
+
+    .logo {
+        position: absolute;
+        top: 0;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    .logo img {
+        justify-self: flex-start;
+    }
+
+    .image {
+        height: auto;
+    }
+
+    .image img {
+        width: 100%;
+    }
+
+
+}
