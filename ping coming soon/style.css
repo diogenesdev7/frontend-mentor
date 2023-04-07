@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+}
+
+main {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img.logo {
+    margin-bottom: 30px;
+}
+
+img.dashboard {
+    width: 100%;
+}
+
+h1 {
+    color: #999;
+    font-weight: 300;
+    font-size: 3rem;
+    padding: 25px;
+}
+
+h1 span {
+    color: #111;
+    font-weight: 600;
+}
+
+p {
+    color: #555;
+    font-size: 1.3rem;
+    font-weight: 100;
+    margin-bottom: 35px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 100px;
+    height: 75px;
+}
+
+input {
+    width: 450px;
+    height: 100%;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    padding: 0 40px;
+    border: 1px solid #888;
+    outline: 1px solid #111;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    height: 100%;
+    width: 250px;
+    background-color: royalblue;
+    color: #fafafa;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.error {
+    position: absolute;
+    top: 425px;
+    color: rgb(165, 67, 67);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.success {
+    position: absolute;
+    top: 430px;
+    color: rgb(36, 197, 135);
+    font-weight: 600;
+    font-size: 1.3rem;
+    display: none;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 760px) {
+    body {
+        padding: 35px;
+    }
+
+    main {
+        width: auto;
+    }
+
+    form {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        height: auto;
+    }
+
+    input {
+        width: 100%;
+        height: 70px;
+    }
+
+    button {
+        width: 100%;
+        height: 70px;
+    }
+}
+
+
+
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+}
