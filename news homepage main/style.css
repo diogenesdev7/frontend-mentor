@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    color: #030303;
+}
+
+body {
+    background-color: #fcfcfc;
+    padding: 5px 5vw;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mostra {
+    left: 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    transition: .3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+.mobile-icon {
+    display: none;
+    cursor: pointer;
+}
+
+.hero-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.main-content {
+    width: 70vw
+}
+
+.image img {
+    width: 100%;
+}
+
+.main-content article {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.main-content article h1 {
+    font-size: max(1.7rem, 3vw);
+}
+
+.main-content article div {
+    width: 500px;
+}
+
+.main-content article div p {
+    font-size: .9rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+}
+
+.main-content article div button {
+    background-color: rgb(230, 78, 78);
+    color: #fafafa;
+    padding: 10px 25px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 5px;
+    transition: .3s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.main-content article div button:hover {
+    background-color:rgb(184, 59, 59);
+}
+
+.new-content {
+    width: 250px;
+    background-color: rgb(17, 17, 46);
+    padding: 15px;
+}
+
+.new-content h1 {
+    color: goldenrod;
+    margin-bottom: 5px;
+}
+
+.new-content article {
+    border-bottom: 1px solid rgb(101, 101, 128);
+    padding: 10px 0;
+}
+
+.new-content article:last-child {
+    border-bottom: none;
+}
+
+.new-content article h1 {
+    color: #fafafa;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.new-content article p {
+    color: rgb(115, 115, 158);
+    font-size: .9rem;
+    line-height: 1.5rem;
+}
+
+
+.cards {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.cards article {
+    display: flex;
+    align-items: center;
+}
+
+.cards article .txt {
+    padding: 1rem;
+}
+
+.cards article h1 {
+    font-size: 1.1rem;
+    margin-top: 13px;
+}
+
+.cards article h2 {
+    color:rgb(129, 129, 156);
+}
+
+.cards article p {
+    font-size: .9rem;
+    margin-top: 13px;
+    color:rgb(101, 101, 128)
+}
+
+.cards article img {
+    width: 150px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1050px) {
+    body {
+        padding: 15px 15px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
+    .new-content {
+        width: 100%;
+        padding: 25px 50px;
+    }
+
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    nav {
+        position: absolute;
+        top: 90px;
+        left: -1000px;
+        background-color: tomato;
+        width: 100%;
+        height: 100%;
+        transition: .7s;
+    }
+
+    nav ul {
+        padding: 50px 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+
+    nav ul li {
+        margin-bottom: 20px;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem;
+        color: #4b1515;
+    }
+
+    nav ul li a:hover {
+        color:rgb(197, 65, 65)
+    }
+
+    .mobile-icon {
+        display: block;
+    }
+    
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
